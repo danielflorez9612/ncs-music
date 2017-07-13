@@ -1,5 +1,5 @@
 name := """ncs-music"""
-organization := "com.example"
+organization := "com.fearlessmonkey"
 
 version := "1.0-SNAPSHOT"
 
@@ -10,3 +10,17 @@ scalaVersion := "2.12.2"
 libraryDependencies += guice
 
 herokuAppName in Compile := "tranquil-mountain-13167"
+
+//Dependency for jdbc
+libraryDependencies += javaJdbc
+
+libraryDependencies ++= Seq(
+  javaJdbc,
+  evolutions,
+  jdbc,
+  javaJpa,
+  "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final",
+  "org.postgresql" % "postgresql" % "9.4-1206-jdbc42"
+)
+
+PlayKeys.externalizeResources := false
