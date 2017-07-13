@@ -1,143 +1,0 @@
-[0m[[0mdebug[0m] [0m+--------------------+[0m
-[0m[[0mdebug[0m] [0m| sbt-heroku details |[0m
-[0m[[0mdebug[0m] [0m+--------------------+-----------------------------------------------[0m
-[0m[[0mdebug[0m] [0m| baseDirectory -> /home/daniel/Descargas/ncs-music [0m
-[0m[[0mdebug[0m] [0m| targetDir     -> /home/daniel/Descargas/ncs-music/target [0m
-[0m[[0mdebug[0m] [0m| jdkVersion    -> 1.8 [0m
-[0m[[0mdebug[0m] [0m| jdkUrl        -> null [0m
-[0m[[0mdebug[0m] [0m| appName       -> tranquil-mountain-13167 [0m
-[0m[[0mdebug[0m] [0m| stack         -> cedar-14 [0m
-[0m[[0mdebug[0m] [0m| includePaths  -> [0m
-[0m[[0mdebug[0m] [0m| buildpacks    -> [0m
-[0m[[0mdebug[0m] [0m+--------------------------------------------------------------------[0m
-[0m[[0minfo[0m] [0m-----> Packaging application...[0m
-[0m[[0minfo[0m] [0m       - app: tranquil-mountain-13167[0m
-[0m[[0minfo[0m] [0m       - including: target/universal/stage/[0m
-[0m[[0mdebug[0m] [0mProcfile:[0m
-[0m[[0mdebug[0m] [0m===================[0m
-[0m[[0mdebug[0m] [0mweb: target/universal/stage/bin/ncs-music -Dhttp.port=$PORT[0m
-[0m[[0mdebug[0m] [0mconsole: target/universal/stage/bin/ncs-music -main scala.tools.nsc.MainGenericRunner -usejavacp[0m
-[0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0m===================[0m
-[0m[[0mdebug[0m] [0mHeroku existing config variables: [DATABASE_URL][0m
-[0m[[0minfo[0m] [0m-----> Creating build...[0m
-[0m[[0minfo[0m] [0m       - file: target/heroku/slug.tgz[0m
-[0m[[0minfo[0m] [0m       - size: 43MB[0m
-[0m[[0mdebug[0m] [0mHeroku Source response: {source_blob={get_url=https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=Ky1%2FBdpnkjAGMfJ3ymHM5Elw6Ps%3D&Expires=1499924905, put_url=https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=qUJHdCJ0sXEO2Uic8m%2B4iuhGyTg%3D&Expires=1499924905}}[0m
-[0m[[0mdebug[0m] [0mHeroku Blob URL: https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=qUJHdCJ0sXEO2Uic8m%2B4iuhGyTg%3D&Expires=1499924905[0m
-[0m[[0minfo[0m] [0m-----> Uploading build...[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (1%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (2%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (3%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (4%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (5%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (6%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (7%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (8%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (9%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (10%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (11%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (12%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (13%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (14%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (15%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (16%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (17%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (18%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (19%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (20%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (21%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (22%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (23%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (24%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (25%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (26%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (27%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (28%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (29%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (30%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (31%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (32%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (33%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (34%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (35%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (36%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (37%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (38%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (39%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (40%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (41%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (42%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (43%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (44%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (45%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (46%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (47%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (48%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (49%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (50%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (51%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (52%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (53%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (54%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (55%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (56%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (57%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (58%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (59%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (60%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (61%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (62%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (63%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (64%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (65%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (66%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (67%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (68%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (69%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (70%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (71%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (72%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (73%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (74%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (75%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (76%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (77%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (78%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (79%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (80%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (81%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (82%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (83%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (84%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (85%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (86%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (87%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (88%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (89%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (90%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (91%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (92%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (93%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (94%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (95%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (96%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (97%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (98%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (99%)[0m
-[0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (100%)[0m
-[0m[[0minfo[0m] [0m       - success[0m
-[0m[[0minfo[0m] [0m-----> Deploying...[0m
-[0m[[0minfo[0m] [0mremote: [0m
-[0m[[0minfo[0m] [0mremote: -----> sbt-heroku app detected[0m
-[0m[[0minfo[0m] [0mremote: -----> Installing OpenJDK 1.8... done[0m
-[0m[[0minfo[0m] [0mremote: -----> Discovering process types[0m
-[0m[[0minfo[0m] [0mremote:        Procfile declares types -> console, web[0m
-[0m[[0minfo[0m] [0mremote: [0m
-[0m[[0minfo[0m] [0mremote: -----> Compressing...[0m
-[0m[[0minfo[0m] [0mremote:        Done: 91.8M[0m
-[0m[[0minfo[0m] [0mremote: -----> Launching...[0m
-[0m[[0minfo[0m] [0mremote:        Released v7[0m
-[0m[[0minfo[0m] [0mremote:        https://tranquil-mountain-13167.herokuapp.com/ deployed to Heroku[0m
-[0m[[0minfo[0m] [0mremote: [0m
-[0m[[0minfo[0m] [0m-----> Done[0m

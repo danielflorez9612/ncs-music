@@ -1,2 +1,0 @@
-web: target/universal/stage/bin/ncs-music -Dhttp.port=$PORT
-console: target/universal/stage/bin/ncs-music -main scala.tools.nsc.MainGenericRunner -usejavacp

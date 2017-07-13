@@ -1,153 +1,0 @@
-+--------------------------------------------------------------------
-| JDK Version -> 1.8.0_131
-| Java Vendor -> http://java.oracle.com/
-| Java Home   -> /usr/lib/jvm/java-8-oracle/jre
-| OS Arch     -> amd64
-| OS Name     -> Linux
-| JAVA_OPTS   -> null
-| SBT_OPTS    -> null
-+--------------------------------------------------------------------
-+--------------------+
-| sbt-heroku details |
-+--------------------+-----------------------------------------------
-| baseDirectory -> /home/daniel/Descargas/ncs-music 
-| targetDir     -> /home/daniel/Descargas/ncs-music/target 
-| jdkVersion    -> 1.8 
-| jdkUrl        -> null 
-| appName       -> tranquil-mountain-13167 
-| stack         -> cedar-14 
-| includePaths  -> 
-| buildpacks    -> 
-+--------------------------------------------------------------------
-
------> Packaging application...
-       - app: tranquil-mountain-13167
-       - including: target/universal/stage/
-Procfile:
-===================
-web: target/universal/stage/bin/ncs-music -Dhttp.port=$PORT
-console: target/universal/stage/bin/ncs-music -main scala.tools.nsc.MainGenericRunner -usejavacp
-
-===================
-Heroku existing config variables: [DATABASE_URL]
------> Creating build...
-       - file: target/heroku/slug.tgz
-       - size: 43MB
-Heroku Source response: {source_blob={get_url=https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=Ky1%2FBdpnkjAGMfJ3ymHM5Elw6Ps%3D&Expires=1499924905, put_url=https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=qUJHdCJ0sXEO2Uic8m%2B4iuhGyTg%3D&Expires=1499924905}}
-Heroku Blob URL: https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=qUJHdCJ0sXEO2Uic8m%2B4iuhGyTg%3D&Expires=1499924905
------> Uploading build...
-[info] -----> Uploading slug... (1%)
-[info] -----> Uploading slug... (2%)
-[info] -----> Uploading slug... (3%)
-[info] -----> Uploading slug... (4%)
-[info] -----> Uploading slug... (5%)
-[info] -----> Uploading slug... (6%)
-[info] -----> Uploading slug... (7%)
-[info] -----> Uploading slug... (8%)
-[info] -----> Uploading slug... (9%)
-[info] -----> Uploading slug... (10%)
-[info] -----> Uploading slug... (11%)
-[info] -----> Uploading slug... (12%)
-[info] -----> Uploading slug... (13%)
-[info] -----> Uploading slug... (14%)
-[info] -----> Uploading slug... (15%)
-[info] -----> Uploading slug... (16%)
-[info] -----> Uploading slug... (17%)
-[info] -----> Uploading slug... (18%)
-[info] -----> Uploading slug... (19%)
-[info] -----> Uploading slug... (20%)
-[info] -----> Uploading slug... (21%)
-[info] -----> Uploading slug... (22%)
-[info] -----> Uploading slug... (23%)
-[info] -----> Uploading slug... (24%)
-[info] -----> Uploading slug... (25%)
-[info] -----> Uploading slug... (26%)
-[info] -----> Uploading slug... (27%)
-[info] -----> Uploading slug... (28%)
-[info] -----> Uploading slug... (29%)
-[info] -----> Uploading slug... (30%)
-[info] -----> Uploading slug... (31%)
-[info] -----> Uploading slug... (32%)
-[info] -----> Uploading slug... (33%)
-[info] -----> Uploading slug... (34%)
-[info] -----> Uploading slug... (35%)
-[info] -----> Uploading slug... (36%)
-[info] -----> Uploading slug... (37%)
-[info] -----> Uploading slug... (38%)
-[info] -----> Uploading slug... (39%)
-[info] -----> Uploading slug... (40%)
-[info] -----> Uploading slug... (41%)
-[info] -----> Uploading slug... (42%)
-[info] -----> Uploading slug... (43%)
-[info] -----> Uploading slug... (44%)
-[info] -----> Uploading slug... (45%)
-[info] -----> Uploading slug... (46%)
-[info] -----> Uploading slug... (47%)
-[info] -----> Uploading slug... (48%)
-[info] -----> Uploading slug... (49%)
-[info] -----> Uploading slug... (50%)
-[info] -----> Uploading slug... (51%)
-[info] -----> Uploading slug... (52%)
-[info] -----> Uploading slug... (53%)
-[info] -----> Uploading slug... (54%)
-[info] -----> Uploading slug... (55%)
-[info] -----> Uploading slug... (56%)
-[info] -----> Uploading slug... (57%)
-[info] -----> Uploading slug... (58%)
-[info] -----> Uploading slug... (59%)
-[info] -----> Uploading slug... (60%)
-[info] -----> Uploading slug... (61%)
-[info] -----> Uploading slug... (62%)
-[info] -----> Uploading slug... (63%)
-[info] -----> Uploading slug... (64%)
-[info] -----> Uploading slug... (65%)
-[info] -----> Uploading slug... (66%)
-[info] -----> Uploading slug... (67%)
-[info] -----> Uploading slug... (68%)
-[info] -----> Uploading slug... (69%)
-[info] -----> Uploading slug... (70%)
-[info] -----> Uploading slug... (71%)
-[info] -----> Uploading slug... (72%)
-[info] -----> Uploading slug... (73%)
-[info] -----> Uploading slug... (74%)
-[info] -----> Uploading slug... (75%)
-[info] -----> Uploading slug... (76%)
-[info] -----> Uploading slug... (77%)
-[info] -----> Uploading slug... (78%)
-[info] -----> Uploading slug... (79%)
-[info] -----> Uploading slug... (80%)
-[info] -----> Uploading slug... (81%)
-[info] -----> Uploading slug... (82%)
-[info] -----> Uploading slug... (83%)
-[info] -----> Uploading slug... (84%)
-[info] -----> Uploading slug... (85%)
-[info] -----> Uploading slug... (86%)
-[info] -----> Uploading slug... (87%)
-[info] -----> Uploading slug... (88%)
-[info] -----> Uploading slug... (89%)
-[info] -----> Uploading slug... (90%)
-[info] -----> Uploading slug... (91%)
-[info] -----> Uploading slug... (92%)
-[info] -----> Uploading slug... (93%)
-[info] -----> Uploading slug... (94%)
-[info] -----> Uploading slug... (95%)
-[info] -----> Uploading slug... (96%)
-[info] -----> Uploading slug... (97%)
-[info] -----> Uploading slug... (98%)
-[info] -----> Uploading slug... (99%)
-[info] -----> Uploading slug... (100%)
-       - success
------> Deploying...
-remote: 
-remote: -----> sbt-heroku app detected
-remote: -----> Installing OpenJDK 1.8... done
-remote: -----> Discovering process types
-remote:        Procfile declares types -> console, web
-remote: 
-remote: -----> Compressing...
-remote:        Done: 91.8M
-remote: -----> Launching...
-remote:        Released v7
-remote:        https://tranquil-mountain-13167.herokuapp.com/ deployed to Heroku
-remote: 
------> Done

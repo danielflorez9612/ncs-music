@@ -1,3 +1,0 @@
-[0m[[0minfo[0m] [0mUpdating application secret in /home/daniel/Descargas/ncs-music/conf/application.conf[0m
-[0m[[33mwarn[0m] [0mDid not find application secret in /home/daniel/Descargas/ncs-music/conf/application.conf[0m
-[0m[[33mwarn[0m] [0mAdding application secret to start of file[0m
