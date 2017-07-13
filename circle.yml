@@ -1,0 +1,26 @@
+machine:
+  timezone: UTC
+  java:
+    version: openjdk8
+  services:
+    - postgresql
+  environment:
+    JDBC_DATABASE_URL: jdbc:postgresql://127.0.0.1:5432/circle_test?user=ubuntu
+general:
+  artifacts:
+    - target/heroku
+dependencies:
+  cache_directories:
+    - "~/.sbt"
+    - "target/resolution-cache"
+    - "target/streams"
+    - "project/target/resolution-cache"
+    - "project/target/streams"
+  # Compile all sources
+  override:
+    - sbt test:compile
+test:
+  override:
+    - sbt test
+  post:
+    - HEROKU_API_KEY="a188a27f-06df-43ad-8921-465e2c82b066" sbt stage deployHeroku
