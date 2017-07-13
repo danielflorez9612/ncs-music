@@ -11,6 +11,10 @@ libraryDependencies += guice
 
 herokuAppName in Compile := "tranquil-mountain-13167"
 
+herokuConfigVars in Compile := Map(
+  "JDBC_DATABASE_URL" -> "jdbc:postgresql://ec2-23-21-158-253.compute-1.amazonaws.com:5432/dej9dqv3lobaei"
+)
+
 //Dependency for jdbc
 libraryDependencies += javaJdbc
 
