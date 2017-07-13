@@ -23,8 +23,8 @@
 [0m[[0minfo[0m] [0m-----> Creating build...[0m
 [0m[[0minfo[0m] [0m       - file: target/heroku/slug.tgz[0m
 [0m[[0minfo[0m] [0m       - size: 43MB[0m
-[0m[[0mdebug[0m] [0mHeroku Source response: {source_blob={get_url=https://s3-external-1.amazonaws.com/heroku-sources-production/7d362252-eba4-4430-9f1d-b73d858d9568?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=A43sRrqPePhy9Lpx0%2BbAdglYdW8%3D&Expires=1499923944, put_url=https://s3-external-1.amazonaws.com/heroku-sources-production/7d362252-eba4-4430-9f1d-b73d858d9568?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=y9oZD2w%2Bd4EcFqn2%2Bfkarlkumpc%3D&Expires=1499923944}}[0m
-[0m[[0mdebug[0m] [0mHeroku Blob URL: https://s3-external-1.amazonaws.com/heroku-sources-production/7d362252-eba4-4430-9f1d-b73d858d9568?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=y9oZD2w%2Bd4EcFqn2%2Bfkarlkumpc%3D&Expires=1499923944[0m
+[0m[[0mdebug[0m] [0mHeroku Source response: {source_blob={get_url=https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=Ky1%2FBdpnkjAGMfJ3ymHM5Elw6Ps%3D&Expires=1499924905, put_url=https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=qUJHdCJ0sXEO2Uic8m%2B4iuhGyTg%3D&Expires=1499924905}}[0m
+[0m[[0mdebug[0m] [0mHeroku Blob URL: https://s3-external-1.amazonaws.com/heroku-sources-production/bb83dfa1-f6b4-4d82-a845-4ec3ba82b267?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=qUJHdCJ0sXEO2Uic8m%2B4iuhGyTg%3D&Expires=1499924905[0m
 [0m[[0minfo[0m] [0m-----> Uploading build...[0m
 [0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (1%)[0m
 [0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (2%)[0m
@@ -136,8 +136,8 @@
 [0m[[0minfo[0m] [0mremote: [0m
 [0m[[0minfo[0m] [0mremote: -----> Compressing...[0m
 [0m[[0minfo[0m] [0mremote:        Done: 91.8M[0m
-[0m[[0minfo[0m] [0mremote:     -----> Launching...[0m
-[0m[[0minfo[0m] [0mremote:        Released v6[0m
+[0m[[0minfo[0m] [0mremote: -----> Launching...[0m
+[0m[[0minfo[0m] [0mremote:        Released v7[0m
 [0m[[0minfo[0m] [0mremote:        https://tranquil-mountain-13167.herokuapp.com/ deployed to Heroku[0m
 [0m[[0minfo[0m] [0mremote: [0m
 [0m[[0minfo[0m] [0m-----> Done[0m
