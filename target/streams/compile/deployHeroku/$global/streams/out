@@ -5,13 +5,13 @@
 [0m[[0mdebug[0m] [0m| targetDir     -> /home/daniel/Descargas/ncs-music/target [0m
 [0m[[0mdebug[0m] [0m| jdkVersion    -> 1.8 [0m
 [0m[[0mdebug[0m] [0m| jdkUrl        -> null [0m
-[0m[[0mdebug[0m] [0m| appName       -> safe-badlands-59627 [0m
+[0m[[0mdebug[0m] [0m| appName       -> tranquil-mountain-13167 [0m
 [0m[[0mdebug[0m] [0m| stack         -> cedar-14 [0m
 [0m[[0mdebug[0m] [0m| includePaths  -> [0m
 [0m[[0mdebug[0m] [0m| buildpacks    -> [0m
 [0m[[0mdebug[0m] [0m+--------------------------------------------------------------------[0m
 [0m[[0minfo[0m] [0m-----> Packaging application...[0m
-[0m[[0minfo[0m] [0m       - app: safe-badlands-59627[0m
+[0m[[0minfo[0m] [0m       - app: tranquil-mountain-13167[0m
 [0m[[0minfo[0m] [0m       - including: target/universal/stage/[0m
 [0m[[0mdebug[0m] [0mProcfile:[0m
 [0m[[0mdebug[0m] [0m===================[0m
@@ -19,12 +19,12 @@
 [0m[[0mdebug[0m] [0mconsole: target/universal/stage/bin/ncs-music -main scala.tools.nsc.MainGenericRunner -usejavacp[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0m===================[0m
-[0m[[0mdebug[0m] [0mHeroku existing config variables: [][0m
+[0m[[0mdebug[0m] [0mHeroku existing config variables: [DATABASE_URL][0m
 [0m[[0minfo[0m] [0m-----> Creating build...[0m
 [0m[[0minfo[0m] [0m       - file: target/heroku/slug.tgz[0m
 [0m[[0minfo[0m] [0m       - size: 43MB[0m
-[0m[[0mdebug[0m] [0mHeroku Source response: {source_blob={get_url=https://s3-external-1.amazonaws.com/heroku-sources-production/ce38d682-87c2-4ebd-b60f-d9363e2b5605?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=BTpifPC%2Buv5J2y37ag6lbCr9%2B10%3D&Expires=1499920780, put_url=https://s3-external-1.amazonaws.com/heroku-sources-production/ce38d682-87c2-4ebd-b60f-d9363e2b5605?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=1hCKnrYK9b6wLmdcuVJNJxcB7aw%3D&Expires=1499920780}}[0m
-[0m[[0mdebug[0m] [0mHeroku Blob URL: https://s3-external-1.amazonaws.com/heroku-sources-production/ce38d682-87c2-4ebd-b60f-d9363e2b5605?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=1hCKnrYK9b6wLmdcuVJNJxcB7aw%3D&Expires=1499920780[0m
+[0m[[0mdebug[0m] [0mHeroku Source response: {source_blob={get_url=https://s3-external-1.amazonaws.com/heroku-sources-production/7d362252-eba4-4430-9f1d-b73d858d9568?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=A43sRrqPePhy9Lpx0%2BbAdglYdW8%3D&Expires=1499923944, put_url=https://s3-external-1.amazonaws.com/heroku-sources-production/7d362252-eba4-4430-9f1d-b73d858d9568?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=y9oZD2w%2Bd4EcFqn2%2Bfkarlkumpc%3D&Expires=1499923944}}[0m
+[0m[[0mdebug[0m] [0mHeroku Blob URL: https://s3-external-1.amazonaws.com/heroku-sources-production/7d362252-eba4-4430-9f1d-b73d858d9568?AWSAccessKeyId=AKIAJURUZ6XB34ESX54A&Signature=y9oZD2w%2Bd4EcFqn2%2Bfkarlkumpc%3D&Expires=1499923944[0m
 [0m[[0minfo[0m] [0m-----> Uploading build...[0m
 [0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (1%)[0m
 [0m[[0minfo[0m] [0m[A[2K[info] -----> Uploading slug... (2%)[0m
@@ -136,8 +136,8 @@
 [0m[[0minfo[0m] [0mremote: [0m
 [0m[[0minfo[0m] [0mremote: -----> Compressing...[0m
 [0m[[0minfo[0m] [0mremote:        Done: 91.8M[0m
-[0m[[0minfo[0m] [0mremote: -----> Launching...[0m
-[0m[[0minfo[0m] [0mremote:        Released v3[0m
-[0m[[0minfo[0m] [0mremote:        https://safe-badlands-59627.herokuapp.com/ deployed to Heroku[0m
+[0m[[0minfo[0m] [0mremote:     -----> Launching...[0m
+[0m[[0minfo[0m] [0mremote:        Released v6[0m
+[0m[[0minfo[0m] [0mremote:        https://tranquil-mountain-13167.herokuapp.com/ deployed to Heroku[0m
 [0m[[0minfo[0m] [0mremote: [0m
 [0m[[0minfo[0m] [0m-----> Done[0m
