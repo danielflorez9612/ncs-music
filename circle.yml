@@ -4,6 +4,8 @@ machine:
     version: openjdk8
   services:
     - postgresql
+  environment:
+      JDBC_DATABASE_URL: jdbc:postgres://localhost/ncs_music_db
 general:
   artifacts:
     - target/heroku
