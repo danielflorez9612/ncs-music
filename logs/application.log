@@ -1,0 +1,8 @@
+2017-07-12 22:27:31,290 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-328 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-12 22:27:31,414 [INFO] from play.api.Play in scala-execution-context-global-328 - Application started (Dev)
+2017-07-12 22:27:44,994 [INFO] from play.core.server.AkkaHttpServer in pool-4-thread-10 - Stopping server...
