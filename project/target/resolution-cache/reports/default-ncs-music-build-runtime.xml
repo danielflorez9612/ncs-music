@@ -9,65 +9,65 @@
 		extra-sbtVersion="0.13"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170712221521"/>
+		date="20170712230135"/>
 	<dependencies>
 		<module organisation="org.foundweekends.giter8" name="sbt-giter8-scaffold">
-			<revision name="0.8.0" status="release" pubdate="20170416215346" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="http://www.foundweekends.org/giter8/" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="70">
+			<revision name="0.8.0" status="release" pubdate="20170416215346" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.foundweekends.org/giter8/" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="70">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="1758" time="2261" location="/home/daniel/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends.giter8/sbt-giter8-scaffold/ivy-0.8.0.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends.giter8/sbt-giter8-scaffold/ivy-0.8.0.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.foundweekends.giter8/sbt-giter8-scaffold/scala_2.10/sbt_0.13/0.8.0/ivys/ivy.xml"/>
+				<metadata-artifact status="no" details="" size="1758" time="0" location="/home/daniel/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends.giter8/sbt-giter8-scaffold/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.foundweekends.giter8/sbt-giter8-scaffold/scala_2.10/sbt_0.13/0.8.0/ivys/ivy.xml"/>
 				<caller organisation="default" name="ncs-music-build" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
-					<artifact name="sbt-giter8-scaffold" type="jar" ext="jar" status="successful" details="" size="23312" time="2520" location="/home/daniel/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends.giter8/sbt-giter8-scaffold/jars/sbt-giter8-scaffold-0.8.0.jar">
+					<artifact name="sbt-giter8-scaffold" type="jar" ext="jar" status="no" details="" size="23312" time="0" location="/home/daniel/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends.giter8/sbt-giter8-scaffold/jars/sbt-giter8-scaffold-0.8.0.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.foundweekends.giter8/sbt-giter8-scaffold/scala_2.10/sbt_0.13/0.8.0/jars/sbt-giter8-scaffold.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.foundweekends.giter8" name="giter8-library_2.10">
-			<revision name="0.8.0" status="release" pubdate="20170416205258" resolver="public" artresolver="public" homepage="http://www.foundweekends.org/giter8/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="71">
+			<revision name="0.8.0" status="release" pubdate="20170416205258" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.foundweekends.org/giter8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="71">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="4198" time="408" location="/home/daniel/.ivy2/cache/org.foundweekends.giter8/giter8-library_2.10/ivy-0.8.0.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.foundweekends.giter8/giter8-library_2.10/ivy-0.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-library_2.10/0.8.0/giter8-library_2.10-0.8.0.pom"/>
+				<metadata-artifact status="no" details="" size="4386" time="0" location="/home/daniel/.ivy2/cache/org.foundweekends.giter8/giter8-library_2.10/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-library_2.10/0.8.0/giter8-library_2.10-0.8.0.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="sbt-giter8-scaffold" conf="compile" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.8.0"/>
 				<artifacts>
-					<artifact name="giter8-library_2.10" type="jar" ext="jar" status="successful" details="" size="318405" time="1851" location="/home/daniel/.ivy2/cache/org.foundweekends.giter8/giter8-library_2.10/jars/giter8-library_2.10-0.8.0.jar">
+					<artifact name="giter8-library_2.10" type="jar" ext="jar" status="no" details="" size="318405" time="0" location="/home/daniel/.ivy2/cache/org.foundweekends.giter8/giter8-library_2.10/jars/giter8-library_2.10-0.8.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-library_2.10/0.8.0/giter8-library_2.10-0.8.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-archiver">
-			<revision name="2.7.1" status="release" pubdate="20141017092844" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
+			<revision name="2.7.1" status="release" pubdate="20141017092844" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="3744" time="512" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-archiver/ivy-2.7.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-archiver/ivy-2.7.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/2.7.1/plexus-archiver-2.7.1.pom"/>
+				<metadata-artifact status="no" details="" size="8258" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-archiver/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/2.7.1/plexus-archiver-2.7.1.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-library_2.10" conf="default, compile, runtime, master" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.8.0"/>
 				<artifacts>
-					<artifact name="plexus-archiver" type="jar" ext="jar" status="successful" details="" size="132871" time="1222" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-archiver/jars/plexus-archiver-2.7.1.jar">
+					<artifact name="plexus-archiver" type="jar" ext="jar" status="no" details="" size="132871" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-archiver/jars/plexus-archiver-2.7.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/2.7.1/plexus-archiver-2.7.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-io">
-			<revision name="2.2" status="release" pubdate="20141012141035" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="96">
+			<revision name="2.2" status="release" pubdate="20141012141035" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="96">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2421" time="406" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-io/ivy-2.2.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-io/ivy-2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/2.2/plexus-io-2.2.pom"/>
+				<metadata-artifact status="no" details="" size="7758" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-io/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/2.2/plexus-io-2.2.pom"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.7.1"/>
 				<artifacts>
-					<artifact name="plexus-io" type="jar" ext="jar" status="successful" details="" size="70024" time="656" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-io/jars/plexus-io-2.2.jar">
+					<artifact name="plexus-io" type="jar" ext="jar" status="no" details="" size="70024" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-io/jars/plexus-io-2.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/2.2/plexus-io-2.2.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-utils">
-			<revision name="3.0.18" status="release" pubdate="20140927121417" resolver="public" artresolver="public" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
+			<revision name="3.0.18" status="release" pubdate="20140927121417" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="3395" time="407" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.0.18.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.0.18.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom"/>
+				<metadata-artifact status="no" details="" size="7183" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-container-default" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="1.0-alpha-9-stable-1"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="3.0.18" rev-constraint-default="3.0.18" rev-constraint-dynamic="3.0.18" callerrev="2.2"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="3.0.18" rev-constraint-default="3.0.18" rev-constraint-dynamic="3.0.18" callerrev="2.7.1"/>
 				<artifacts>
-					<artifact name="plexus-utils" type="jar" ext="jar" status="successful" details="" size="243000" time="1475" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.18.jar">
+					<artifact name="plexus-utils" type="jar" ext="jar" status="no" details="" size="243000" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.18.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.jar"/>
 					</artifact>
 				</artifacts>
@@ -81,127 +81,121 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.plexus" name="plexus-container-default">
-			<revision name="1.0-alpha-9-stable-1" status="release" pubdate="20070310204924" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
-				<metadata-artifact status="successful" details="" size="3949" time="697" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-container-default/ivy-1.0-alpha-9-stable-1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-container-default/ivy-1.0-alpha-9-stable-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom"/>
+			<revision name="1.0-alpha-9-stable-1" status="release" pubdate="20070310204924" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
+				<metadata-artifact status="no" details="" size="3144" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-container-default/ivy-1.0-alpha-9-stable-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom"/>
 				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1.0-alpha-9-stable-1" rev-constraint-default="1.0-alpha-9-stable-1" rev-constraint-dynamic="1.0-alpha-9-stable-1" callerrev="2.7.1"/>
 				<artifacts>
-					<artifact name="plexus-container-default" type="jar" ext="jar" status="successful" details="" size="194185" time="1841" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-container-default/jars/plexus-container-default-1.0-alpha-9-stable-1.jar">
+					<artifact name="plexus-container-default" type="jar" ext="jar" status="no" details="" size="194185" time="0" location="/home/daniel/.ivy2/cache/org.codehaus.plexus/plexus-container-default/jars/plexus-container-default-1.0-alpha-9-stable-1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm">
-			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226190057" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226190057" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
 				<license name="Eclipse Distribution License (New BSD License)"/>
-				<metadata-artifact status="successful" details="" size="9542" time="665" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/ivy-3.7.0.201502260915-r.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/ivy-3.7.0.201502260915-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.pgm/3.7.0.201502260915-r/org.eclipse.jgit.pgm-3.7.0.201502260915-r.pom"/>
+				<metadata-artifact status="no" details="" size="8051" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/ivy-3.7.0.201502260915-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.pgm/3.7.0.201502260915-r/org.eclipse.jgit.pgm-3.7.0.201502260915-r.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-library_2.10" conf="default, compile, runtime, master" rev="3.7.0.201502260915-r" rev-constraint-default="3.7.0.201502260915-r" rev-constraint-dynamic="3.7.0.201502260915-r" callerrev="0.8.0"/>
 				<artifacts>
-					<artifact name="org.eclipse.jgit.pgm" type="jar" ext="jar" status="successful" details="" size="197637" time="1368" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/jars/org.eclipse.jgit.pgm-3.7.0.201502260915-r.jar">
+					<artifact name="org.eclipse.jgit.pgm" type="jar" ext="jar" status="no" details="" size="197637" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.pgm/jars/org.eclipse.jgit.pgm-3.7.0.201502260915-r.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.pgm/3.7.0.201502260915-r/org.eclipse.jgit.pgm-3.7.0.201502260915-r.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.ui">
-			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226185953" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="92">
+			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226185953" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="92">
 				<license name="Eclipse Distribution License (New BSD License)"/>
-				<metadata-artifact status="successful" details="" size="3557" time="491" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/ivy-3.7.0.201502260915-r.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/ivy-3.7.0.201502260915-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ui/3.7.0.201502260915-r/org.eclipse.jgit.ui-3.7.0.201502260915-r.pom"/>
+				<metadata-artifact status="no" details="" size="7054" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/ivy-3.7.0.201502260915-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ui/3.7.0.201502260915-r/org.eclipse.jgit.ui-3.7.0.201502260915-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="3.7.0.201502260915-r" rev-constraint-default="3.7.0.201502260915-r" rev-constraint-dynamic="3.7.0.201502260915-r" callerrev="3.7.0.201502260915-r"/>
 				<artifacts>
-					<artifact name="org.eclipse.jgit.ui" type="jar" ext="jar" status="successful" details="" size="26950" time="511" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/jars/org.eclipse.jgit.ui-3.7.0.201502260915-r.jar">
+					<artifact name="org.eclipse.jgit.ui" type="jar" ext="jar" status="no" details="" size="26950" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ui/jars/org.eclipse.jgit.ui-3.7.0.201502260915-r.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ui/3.7.0.201502260915-r/org.eclipse.jgit.ui-3.7.0.201502260915-r.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.archive">
-			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226185023" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226185023" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
 				<license name="Eclipse Distribution License (New BSD License)"/>
-				<metadata-artifact status="successful" details="" size="3749" time="504" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/ivy-3.7.0.201502260915-r.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/ivy-3.7.0.201502260915-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.archive/3.7.0.201502260915-r/org.eclipse.jgit.archive-3.7.0.201502260915-r.pom"/>
+				<metadata-artifact status="no" details="" size="7514" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/ivy-3.7.0.201502260915-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.archive/3.7.0.201502260915-r/org.eclipse.jgit.archive-3.7.0.201502260915-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="3.7.0.201502260915-r" rev-constraint-default="3.7.0.201502260915-r" rev-constraint-dynamic="3.7.0.201502260915-r" callerrev="3.7.0.201502260915-r"/>
 				<artifacts>
-					<artifact name="org.eclipse.jgit.archive" type="jar" ext="jar" status="successful" details="" size="21562" time="744" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/jars/org.eclipse.jgit.archive-3.7.0.201502260915-r.jar">
+					<artifact name="org.eclipse.jgit.archive" type="jar" ext="jar" status="no" details="" size="21562" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/jars/org.eclipse.jgit.archive-3.7.0.201502260915-r.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.archive/3.7.0.201502260915-r/org.eclipse.jgit.archive-3.7.0.201502260915-r.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.osgi" name="org.osgi.core">
-			<revision name="4.3.1" status="release" pubdate="20121030044430" resolver="public" artresolver="public" homepage="
-    http://www.osgi.org
-  " downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
-				<license name="
-        Apache License, Version 2.0
-      " url="
-        http://opensource.org/licenses/apache2.0.php
-      "/>
-				<metadata-artifact status="successful" details="" size="1413" time="473" location="/home/daniel/.ivy2/cache/org.osgi/org.osgi.core/ivy-4.3.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.osgi/org.osgi.core/ivy-4.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.pom"/>
+			<revision name="4.3.1" status="release" pubdate="20121030044430" resolver="sbt-chain" artresolver="sbt-chain" homepage="     http://www.osgi.org   " downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
+				<license name="         Apache License, Version 2.0       " url="         http://opensource.org/licenses/apache2.0.php       "/>
+				<metadata-artifact status="no" details="" size="2605" time="0" location="/home/daniel/.ivy2/cache/org.osgi/org.osgi.core/ivy-4.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.archive" conf="compile, runtime" rev="4.3.1" rev-constraint-default="4.3.1" rev-constraint-dynamic="4.3.1" callerrev="3.7.0.201502260915-r"/>
 				<artifacts>
-					<artifact name="org.osgi.core" type="jar" ext="jar" status="successful" details="" size="349985" time="960" location="/home/daniel/.ivy2/cache/org.osgi/org.osgi.core/jars/org.osgi.core-4.3.1.jar">
+					<artifact name="org.osgi.core" type="jar" ext="jar" status="no" details="" size="349985" time="0" location="/home/daniel/.ivy2/cache/org.osgi/org.osgi.core/jars/org.osgi.core-4.3.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
-			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226184810" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
+			<revision name="3.7.0.201502260915-r" status="release" pubdate="20150226184810" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
 				<license name="Eclipse Distribution License (New BSD License)"/>
-				<metadata-artifact status="successful" details="" size="6327" time="850" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-3.7.0.201502260915-r.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-3.7.0.201502260915-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.pom"/>
+				<metadata-artifact status="no" details="" size="7753" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-3.7.0.201502260915-r.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ui" conf="compile, runtime" rev="3.7.0.201502260915-r" rev-constraint-default="3.7.0.201502260915-r" rev-constraint-dynamic="3.7.0.201502260915-r" callerrev="3.7.0.201502260915-r"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.archive" conf="compile, runtime" rev="3.7.0.201502260915-r" rev-constraint-default="3.7.0.201502260915-r" rev-constraint-dynamic="3.7.0.201502260915-r" callerrev="3.7.0.201502260915-r"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.pgm" conf="compile, runtime" rev="3.7.0.201502260915-r" rev-constraint-default="3.7.0.201502260915-r" rev-constraint-dynamic="3.7.0.201502260915-r" callerrev="3.7.0.201502260915-r"/>
 				<artifacts>
-					<artifact name="org.eclipse.jgit" type="jar" ext="jar" status="successful" details="" size="1981452" time="3999" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-3.7.0.201502260915-r.jar">
+					<artifact name="org.eclipse.jgit" type="jar" ext="jar" status="no" details="" size="1981452" time="0" location="/home/daniel/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-3.7.0.201502260915-r.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
-			<revision name="4.1.3" status="release" pubdate="20120202071519" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
+			<revision name="4.1.3" status="release" pubdate="20120202071519" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
 				<license name="Apache License" url="LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="5990" time="427" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.1.3.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom"/>
+				<metadata-artifact status="no" details="" size="6741" time="0" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="4.1.3" rev-constraint-default="4.1.3" rev-constraint-dynamic="4.1.3" callerrev="3.7.0.201502260915-r"/>
 				<artifacts>
-					<artifact name="httpclient" type="jar" ext="jar" status="successful" details="" size="352585" time="1201" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.1.3.jar">
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="352585" time="0" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.1.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="commons-codec" name="commons-codec">
-			<revision name="1.4" status="release" pubdate="20090809162217" resolver="public" artresolver="public" homepage="http://commons.apache.org/codec/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
+			<revision name="1.4" status="release" pubdate="20090809162217" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="10494" time="467" location="/home/daniel/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
+				<metadata-artifact status="no" details="" size="5231" time="0" location="/home/daniel/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="4.1.3"/>
 				<artifacts>
-					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="58160" time="494" location="/home/daniel/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.4.jar">
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="58160" time="0" location="/home/daniel/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
-			<revision name="4.1.4" status="release" pubdate="20111218113741" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
+			<revision name="4.1.4" status="release" pubdate="20111218113741" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
 				<license name="Apache License" url="LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="7390" time="2173" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.1.4.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.pom"/>
+				<metadata-artifact status="no" details="" size="5750" time="0" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.pom"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.1.4" rev-constraint-default="4.1.4" rev-constraint-dynamic="4.1.4" callerrev="4.1.3"/>
 				<artifacts>
-					<artifact name="httpcore" type="jar" ext="jar" status="successful" details="" size="181410" time="757" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.1.4.jar">
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="181410" time="0" location="/home/daniel/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.1.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.googlecode.javaewah" name="JavaEWAH">
-			<revision name="0.7.9" status="release" pubdate="20131112093343" resolver="public" artresolver="public" homepage="http://code.google.com/p/javaewah/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+			<revision name="0.7.9" status="release" pubdate="20131112093343" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/javaewah/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="4344" time="429" location="/home/daniel/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/ivy-0.7.9.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/ivy-0.7.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.pom"/>
+				<metadata-artifact status="no" details="" size="4101" time="0" location="/home/daniel/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/ivy-0.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.pom"/>
 				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="0.7.9" rev-constraint-default="0.7.9" rev-constraint-dynamic="0.7.9" callerrev="3.7.0.201502260915-r"/>
 				<artifacts>
-					<artifact name="JavaEWAH" type="bundle" ext="jar" status="successful" details="" size="125146" time="852" location="/home/daniel/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/bundles/JavaEWAH-0.7.9.jar">
+					<artifact name="JavaEWAH" type="bundle" ext="jar" status="no" details="" size="125146" time="0" location="/home/daniel/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/bundles/JavaEWAH-0.7.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.jar"/>
 					</artifact>
 				</artifacts>
@@ -220,124 +214,124 @@
 			</revision>
 		</module>
 		<module organisation="org.clapper" name="scalasti_2.10">
-			<revision name="2.1.2" status="release" pubdate="20161104070419" resolver="public" artresolver="public" homepage="http://software.clapper.org/scalasti/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+			<revision name="2.1.2" status="release" pubdate="20161104070419" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/scalasti/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
 				<license name="BSD" url="http://software.clapper.org/scalasti/license.html"/>
-				<metadata-artifact status="successful" details="" size="2394" time="405" location="/home/daniel/.ivy2/cache/org.clapper/scalasti_2.10/ivy-2.1.2.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.clapper/scalasti_2.10/ivy-2.1.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/scalasti_2.10/2.1.2/scalasti_2.10-2.1.2.pom"/>
+				<metadata-artifact status="no" details="" size="3393" time="0" location="/home/daniel/.ivy2/cache/org.clapper/scalasti_2.10/ivy-2.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/scalasti_2.10/2.1.2/scalasti_2.10-2.1.2.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-library_2.10" conf="default, compile, runtime, master" rev="2.1.2" rev-constraint-default="2.1.2" rev-constraint-dynamic="2.1.2" callerrev="0.8.0"/>
 				<artifacts>
-					<artifact name="scalasti_2.10" type="jar" ext="jar" status="successful" details="" size="40253" time="962" location="/home/daniel/.ivy2/cache/org.clapper/scalasti_2.10/jars/scalasti_2.10-2.1.2.jar">
+					<artifact name="scalasti_2.10" type="jar" ext="jar" status="no" details="" size="40253" time="0" location="/home/daniel/.ivy2/cache/org.clapper/scalasti_2.10/jars/scalasti_2.10-2.1.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/scalasti_2.10/2.1.2/scalasti_2.10-2.1.2.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.antlr" name="ST4">
-			<revision name="4.0.8" status="release" pubdate="20140325065835" resolver="public" artresolver="public" homepage="http://www.stringtemplate.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
+			<revision name="4.0.8" status="release" pubdate="20140325065835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.stringtemplate.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
 				<license name="BSD licence" url="http://antlr.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="13742" time="679" location="/home/daniel/.ivy2/cache/org.antlr/ST4/ivy-4.0.8.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.antlr/ST4/ivy-4.0.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.pom"/>
+				<metadata-artifact status="no" details="" size="4871" time="0" location="/home/daniel/.ivy2/cache/org.antlr/ST4/ivy-4.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.pom"/>
 				<caller organisation="org.clapper" name="scalasti_2.10" conf="compile, runtime" rev="4.0.8" rev-constraint-default="4.0.8" rev-constraint-dynamic="4.0.8" callerrev="2.1.2"/>
 				<artifacts>
-					<artifact name="ST4" type="jar" ext="jar" status="successful" details="" size="239543" time="804" location="/home/daniel/.ivy2/cache/org.antlr/ST4/jars/ST4-4.0.8.jar">
+					<artifact name="ST4" type="jar" ext="jar" status="no" details="" size="239543" time="0" location="/home/daniel/.ivy2/cache/org.antlr/ST4/jars/ST4-4.0.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.antlr" name="antlr-runtime">
-			<revision name="3.5.2" status="release" pubdate="20140325070356" resolver="public" artresolver="public" homepage="http://www.antlr.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
+			<revision name="3.5.2" status="release" pubdate="20140325070356" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
 				<license name="BSD licence" url="http://antlr.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="2241" time="416" location="/home/daniel/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.2.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.pom"/>
+				<metadata-artifact status="no" details="" size="5591" time="0" location="/home/daniel/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.pom"/>
 				<caller organisation="org.antlr" name="ST4" conf="compile, runtime" rev="3.5.2" rev-constraint-default="3.5.2" rev-constraint-dynamic="3.5.2" callerrev="4.0.8"/>
 				<artifacts>
-					<artifact name="antlr-runtime" type="jar" ext="jar" status="successful" details="" size="167761" time="680" location="/home/daniel/.ivy2/cache/org.antlr/antlr-runtime/jars/antlr-runtime-3.5.2.jar">
+					<artifact name="antlr-runtime" type="jar" ext="jar" status="no" details="" size="167761" time="0" location="/home/daniel/.ivy2/cache/org.antlr/antlr-runtime/jars/antlr-runtime-3.5.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.clapper" name="classutil_2.10">
-			<revision name="1.1.0" status="release" pubdate="20161103182719" resolver="public" artresolver="public" homepage="http://software.clapper.org/classutil/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+			<revision name="1.1.0" status="release" pubdate="20161103182719" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/classutil/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
 				<license name="BSD New" url="http://software.clapper.org/classutil/license.html"/>
-				<metadata-artifact status="successful" details="" size="2390" time="1454" location="/home/daniel/.ivy2/cache/org.clapper/classutil_2.10/ivy-1.1.0.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.clapper/classutil_2.10/ivy-1.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/classutil_2.10/1.1.0/classutil_2.10-1.1.0.pom"/>
+				<metadata-artifact status="no" details="" size="3377" time="0" location="/home/daniel/.ivy2/cache/org.clapper/classutil_2.10/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/classutil_2.10/1.1.0/classutil_2.10-1.1.0.pom"/>
 				<caller organisation="org.clapper" name="scalasti_2.10" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="2.1.2"/>
 				<artifacts>
-					<artifact name="classutil_2.10" type="jar" ext="jar" status="successful" details="" size="121270" time="1297" location="/home/daniel/.ivy2/cache/org.clapper/classutil_2.10/jars/classutil_2.10-1.1.0.jar">
+					<artifact name="classutil_2.10" type="jar" ext="jar" status="no" details="" size="121270" time="0" location="/home/daniel/.ivy2/cache/org.clapper/classutil_2.10/jars/classutil_2.10-1.1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/classutil_2.10/1.1.0/classutil_2.10-1.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-util">
-			<revision name="5.1" status="release" pubdate="20160305084310" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+			<revision name="5.1" status="release" pubdate="20160305084310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="2086" time="423" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-util/ivy-5.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-util/ivy-5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.1/asm-util-5.1.pom"/>
+				<metadata-artifact status="no" details="" size="4118" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-util/ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.1/asm-util-5.1.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.10" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.1.0"/>
 				<artifacts>
-					<artifact name="asm-util" type="jar" ext="jar" status="successful" details="" size="43309" time="466" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-util/jars/asm-util-5.1.jar">
+					<artifact name="asm-util" type="jar" ext="jar" status="no" details="" size="43309" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-util/jars/asm-util-5.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.1/asm-util-5.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-commons">
-			<revision name="5.1" status="release" pubdate="20160305084258" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
+			<revision name="5.1" status="release" pubdate="20160305084258" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="2092" time="688" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-commons/ivy-5.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-commons/ivy-5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.1/asm-commons-5.1.pom"/>
+				<metadata-artifact status="no" details="" size="4124" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-commons/ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.1/asm-commons-5.1.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.10" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.1.0"/>
 				<artifacts>
-					<artifact name="asm-commons" type="jar" ext="jar" status="successful" details="" size="47195" time="629" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-commons/jars/asm-commons-5.1.jar">
+					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="47195" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-commons/jars/asm-commons-5.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.1/asm-commons-5.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-tree">
-			<revision name="5.1" status="release" pubdate="20160305084305" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+			<revision name="5.1" status="release" pubdate="20160305084305" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="2081" time="412" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-tree/ivy-5.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-tree/ivy-5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.pom"/>
+				<metadata-artifact status="no" details="" size="4113" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-tree/ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.pom"/>
 				<caller organisation="org.ow2.asm" name="asm-util" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="5.1"/>
 				<caller organisation="org.ow2.asm" name="asm-commons" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="5.1"/>
 				<artifacts>
-					<artifact name="asm-tree" type="jar" ext="jar" status="successful" details="" size="29130" time="454" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-tree/jars/asm-tree-5.1.jar">
+					<artifact name="asm-tree" type="jar" ext="jar" status="no" details="" size="29130" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm-tree/jars/asm-tree-5.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm">
-			<revision name="5.1" status="release" pubdate="20160305084246" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+			<revision name="5.1" status="release" pubdate="20160305084246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
 				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="1933" time="428" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm/ivy-5.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.ow2.asm/asm/ivy-5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.1/asm-5.1.pom"/>
+				<metadata-artifact status="no" details="" size="3939" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm/ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.1/asm-5.1.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.10" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.1.0"/>
 				<caller organisation="org.ow2.asm" name="asm-tree" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="5.1"/>
 				<artifacts>
-					<artifact name="asm" type="jar" ext="jar" status="successful" details="" size="53468" time="553" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.1.jar">
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="53468" time="0" location="/home/daniel/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.1/asm-5.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.clapper" name="grizzled-scala_2.10">
-			<revision name="3.1.0" status="release" pubdate="20161103183026" resolver="public" artresolver="public" homepage="http://software.clapper.org/grizzled-scala/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+			<revision name="3.1.0" status="release" pubdate="20161103183026" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/grizzled-scala/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
 				<license name="BSD" url="http://software.clapper.org/grizzled-scala/license.html"/>
-				<metadata-artifact status="successful" details="" size="1730" time="406" location="/home/daniel/.ivy2/cache/org.clapper/grizzled-scala_2.10/ivy-3.1.0.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/org.clapper/grizzled-scala_2.10/ivy-3.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-scala_2.10/3.1.0/grizzled-scala_2.10-3.1.0.pom"/>
+				<metadata-artifact status="no" details="" size="2826" time="0" location="/home/daniel/.ivy2/cache/org.clapper/grizzled-scala_2.10/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-scala_2.10/3.1.0/grizzled-scala_2.10-3.1.0.pom"/>
 				<caller organisation="org.clapper" name="classutil_2.10" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="1.1.0"/>
 				<caller organisation="org.clapper" name="scalasti_2.10" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="2.1.2"/>
 				<artifacts>
-					<artifact name="grizzled-scala_2.10" type="jar" ext="jar" status="successful" details="" size="619305" time="2310" location="/home/daniel/.ivy2/cache/org.clapper/grizzled-scala_2.10/jars/grizzled-scala_2.10-3.1.0.jar">
+					<artifact name="grizzled-scala_2.10" type="jar" ext="jar" status="no" details="" size="619305" time="0" location="/home/daniel/.ivy2/cache/org.clapper/grizzled-scala_2.10/jars/grizzled-scala_2.10-3.1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/grizzled-scala_2.10/3.1.0/grizzled-scala_2.10-3.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="3.0.1" status="release" pubdate="20151009000635" resolver="public" artresolver="public" homepage="http://findbugs.sourceforge.net/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+			<revision name="3.0.1" status="release" pubdate="20151009000635" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="4286" time="466" location="/home/daniel/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom"/>
+				<metadata-artifact status="no" details="" size="3268" time="0" location="/home/daniel/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom"/>
 				<caller organisation="org.foundweekends.giter8" name="giter8-library_2.10" conf="default, compile, runtime, master" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.8.0"/>
 				<caller organisation="org.scala-js" name="closure-compiler-java-6" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="v20160517"/>
 				<artifacts>
-					<artifact name="jsr305" type="jar" ext="jar" status="successful" details="" size="19943" time="1780" location="/home/daniel/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar">
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="19943" time="0" location="/home/daniel/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -692,12 +686,12 @@
 			</revision>
 		</module>
 		<module organisation="commons-logging" name="commons-logging">
-			<revision name="1.1.1" status="release" pubdate="20071126152410" resolver="public" artresolver="public" homepage="http://commons.apache.org/logging" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
+			<revision name="1.1.1" status="release" pubdate="20071126152410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="18365" time="865" location="/home/daniel/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="true" original-local-location="/home/daniel/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<metadata-artifact status="no" details="" size="4212" time="0" location="/home/daniel/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.1.3"/>
 				<artifacts>
-					<artifact name="commons-logging" type="jar" ext="jar" status="successful" details="" size="60686" time="496" location="/home/daniel/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/home/daniel/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
 					</artifact>
 				</artifacts>
