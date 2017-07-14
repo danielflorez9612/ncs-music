@@ -24,11 +24,11 @@ public class SongController extends Controller {
         return ok("crmostrando una cancion");
     }
 
-    public Result create(String username){
+    public Result create(int artist){
         return ok("estoy creando una cancion");
     }
 
-    public Result store(String username){
+    public Result store(int artist){
         return ok("estoy guardando una cancion");
     }
 }

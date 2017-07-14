@@ -9,30 +9,30 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # Controller showing a sample home page
 GET     /                           controllers.HomeController.index
 
-# Create account form
-GET     /sign-up                    controllers.AccountController.create
-POST    /sign-up                    controllers.AccountController.store
+# Create artist account form
+GET     /sign-up                    controllers.ArtistController.create
+POST    /sign-up                    controllers.ArtistController.store
 
 # Show songs
 GET     /songs                      controllers.SongController.index
 
 # Play song
-GET     /songs/:uuid                controllers.SongController.show(uuid :Integer)
+GET     /songs/:song                controllers.SongController.show(song :Integer)
 
 # Delete song
-DELETE  /songs/:uuid                controllers.SongController.destroy(uuid :Integer)
+DELETE  /songs/:song                controllers.SongController.destroy(song :Integer)
 
-# Show account
-GET     /account/:username          controllers.AccountController.show(username :String)
+# Show artist account
+GET     /artist/:artist          controllers.ArtistController.show(artist :Integer)
 
-# Account edit
-GET     /account/:username/edit             controllers.AccountController.edit(username :String)
-PATCH   /account/:username                  controllers.AccountController.update(username :String)
+# Artist edit
+GET     /artist/:artist/edit             controllers.ArtistController.edit(artist :Integer)
+PATCH   /artist/:artist                  controllers.ArtistController.update(artist :Integer)
 
-# Account delete
-DELETE  /account/:username                  controllers.AccountController.delete(username :String)
+# Artist delete
+DELETE  /artist/:artist                  controllers.ArtistController.delete(artist :Integer)
 
 
-# Add song for an account
-GET     /account/:username/upload     controllers.SongController.create(username :String)
-POST    /account/:username/upload            controllers.SongController.store(username :String)
+# Add song for an artist
+GET     /artist/:artist/upload     controllers.SongController.create(artist :Integer)
+POST    /artist/:artist/upload            controllers.SongController.store(artist :Integer)

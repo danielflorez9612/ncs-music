@@ -2,26 +2,18 @@
 
 # --- !Ups
 
-CREATE TABLE account
-(
-	id serial,
-	username character varying(20) NOT NULL,
-	password character varying(50) NOT NULL,
-	CONSTRAINT PK_ACCOUNT PRIMARY KEY (id),
-	CONSTRAINT UQ_ACCOUNT UNIQUE (username)
-);
 CREATE TABLE artist
 (
-	id serial,
+	id integer,
+	username character varying(20) NOT NULL UNIQUE,
+	password character varying(50) NOT NULL,
 	forename character varying(71) NOT NULL,
 	surname character varying(71) NOT NULL,
-	account_id integer,
-	CONSTRAINT PK_ARTIST PRIMARY KEY (id),
-	CONSTRAINT FK_ARTIST_ACCOUNT FOREIGN KEY (account_id) REFERENCES account(id)
+	CONSTRAINT PK_ARTIST PRIMARY KEY (id)
 );
 CREATE TABLE song
 (
-	id serial,
+	id integer ,
 	artist_id integer,
 	title character varying(60),
 	uri character varying (100),
@@ -31,6 +23,4 @@ CREATE TABLE song
 
 # --- !Downs
 
-DROP TABLE IF EXISTS account;
-DROP TABLE IF EXISTS artist;
-DROP TABLE IF EXISTS song;
+DROP TABLE IF EXISTS song, artist CASCADE;

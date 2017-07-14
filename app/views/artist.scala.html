@@ -1,0 +1,14 @@
+@(artistForm: play.data.Form[Artist])
+
+@main("Create Account") {
+    <h1>Account creation form</h1>
+    @helper.form(helper.CSRF(routes.ArtistController.store)) {
+        <fieldset>
+            @helper.inputText(artistForm("username"), '_label -> "username")
+            @helper.inputPassword(artistForm("password"), '_label -> "password")
+            @helper.inputText(artistForm("forename"), '_label -> "forename")
+            @helper.inputText(artistForm("surname"), '_label -> "surname")
+        </fieldset>
+        <input type="submit" class="btn btn-primary" value="Sign in">
+    }
+}
