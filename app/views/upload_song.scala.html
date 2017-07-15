@@ -1,16 +1,17 @@
-@(artist: models.Artist)
+@(artist_id: Integer)(errors: String)
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-@helper.form(action = controllers.routes.SongController.store(artist.getId()), 'enctype -> "multipart/form-data") {
-<input type="title" name="title">
+@helper.form(action = controllers.routes.SongController.store(artist_id), 'enctype -> "multipart/form-data") {
+
 <input type="file" name="song">
 
 <p>
     <input type="submit">
 </p>
+<span style="color:red">@errors</span>
 
 }

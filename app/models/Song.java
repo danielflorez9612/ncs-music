@@ -5,15 +5,11 @@ import models.Artist;
 
 @Entity
 @Table(name = "song")
+@NamedQuery(name="Song.maxId", query="select max(s.id) from Song s")
 public class Song {
     @Id
-    @SequenceGenerator(name="song_id_seq",
-            sequenceName="song_id_seq",
-            allocationSize=1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,
-            generator="song_id_seq")
     @Column(name = "id", updatable=false)
-    public int id;
+    public Integer id;
 
     @Column(name="title")
     public String title;
@@ -21,9 +17,21 @@ public class Song {
     @Column(name="uri")
     public String uri;
 
+
+
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="artist_id")
     private Artist artist;
+
+    public Song(){
+
+    }
+    public Song(Integer id, String filename,Artist artist){
+        this.id = id;
+        this.title = filename.substring(0,filename.indexOf(".mp3"));
+        setArtist(artist);
+        this.uri = "./songs/"+artist.getId()+"/"+filename;
+    }
 
     public void setArtist(Artist artist) {
         this.artist = artist;
@@ -34,5 +42,32 @@ public class Song {
 
     public Artist getArtist() {
         return artist;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getUri() {
+        return uri;
+    }
+
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+    public String toString(){
+        return this.uri;
     }
 }
