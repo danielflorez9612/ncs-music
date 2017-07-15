@@ -19,32 +19,40 @@ Artist username: <strong>@artist.getUsername()</strong>
 <br/>
 <br/>
 Artist full name: <strong>@artist.getForename() @artist.getSurname()</strong>
+<br/><br/>
+@helper.form(action=controllers.routes.ArtistController.edit(artist.getId())){
+<input type="submit" value="Edit artist">
+}
+<br>
+
+@helper.form(action=controllers.routes.SongController.create(artist.getId())){
+<input type="submit" value="Upload song">
+}
+
 <br/>
-<br/>
+@helper.form(action=controllers.routes.ArtistController.delete(artist.getId())){
+<input type="submit" value="Delete artist">
+}
 <br/>
 <strong>Songs:</strong>
 @if(!artist.getSongs().isEmpty) {
 <ul>
     @for(song <- artist.getSongs()) {
-    <li>@song.title </li>
+    <li>
+        @song.getTitle()
+        @helper.form(action=controllers.routes.SongController.show(song.getId())){
+        <input type="submit" value="Play this song">
+        }
+        @helper.form(action=controllers.routes.SongController.destroy(song.getId())){
+        <input type="submit" value="Delete this song">
+        }
+    </li>
     }
 </ul>
 }else{
 No songs for this artist
 }
-<br>
 
-@helper.form(action=controllers.routes.SongController.create(artist.getId())){
-    <input type="submit" value="Upload song">
-}
-<br/>
-@helper.form(action=controllers.routes.ArtistController.edit(artist.getId())){
-    <input type="submit" value="Edit artist">
-}
-<br/>
-@helper.form(action=controllers.routes.ArtistController.delete(artist.getId())){
-    <input type="submit" value="Delete artist">
-}
 <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
     </body>
 </html>

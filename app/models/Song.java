@@ -9,13 +9,13 @@ import models.Artist;
 public class Song {
     @Id
     @Column(name = "id", updatable=false)
-    public Integer id;
+    private Integer id;
 
     @Column(name="title")
-    public String title;
+    private String title;
 
     @Column(name="uri")
-    public String uri;
+    private String uri;
 
 
 

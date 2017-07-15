@@ -91,10 +91,11 @@ public class ArtistController extends Controller {
 
     @Transactional
     public Result delete(int artist_id){
-        Artist artist = JPA.em().find(Artist.class, artist_id);
+        EntityManager em = jpaApi.em();
+        Artist artist = em.find(Artist.class, artist_id);
         if(artist!=null){
-            JPA.em().remove(artist);
-            return redirect("Artist deleted succesfully");
+           em.remove(artist);
+           return ok("Artist deleted succesfully");
         }else{
             return ok("artist does not exist");
         }
