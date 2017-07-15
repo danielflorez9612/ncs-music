@@ -1,0 +1,14 @@
+@(artistForm: play.data.Form[Artist])(artist: models.Artist)
+
+@main("Update Artist") {
+    <h1>Account update form for @artist.getUsername()</h1>
+    @helper.form(action=routes.ArtistController.update(artist.getId())) {
+        <fieldset>
+            @helper.inputText(field =artistForm("username"), '_label -> "username")
+            @helper.inputPassword(field =artistForm("password"), '_label -> "password")
+            @helper.inputText(field =artistForm("forename"), '_label -> "forename")
+            @helper.inputText(field =artistForm("surname"), '_label -> "surname")
+        </fieldset>
+        <input type="submit" class="btn btn-primary" value="Update">
+    }
+}

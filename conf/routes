@@ -27,7 +27,7 @@ GET     /artist/:artist          controllers.ArtistController.show(artist :Integ
 
 # Artist edit
 GET     /artist/:artist/edit             controllers.ArtistController.edit(artist :Integer)
-PATCH   /artist/:artist                  controllers.ArtistController.update(artist :Integer)
+POST   /artist/:artist/edit                  controllers.ArtistController.update(artist :Integer)
 
 # Artist delete
 POST  /artist/:artist/del                  controllers.ArtistController.delete(artist :Integer)

@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Artist;
+import models.*;
 import play.data.Form;
 import play.data.FormFactory;
 import play.db.jpa.JPA;
@@ -8,8 +8,7 @@ import play.db.jpa.Transactional;
 import javax.inject.Inject;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.create_artist;
-import views.html.view_artist;
+import views.html.*;
 import javax.persistence.*;
 import play.db.jpa.JPAApi;
 
@@ -58,16 +57,36 @@ public class ArtistController extends Controller {
             final Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
             return ok(view_artist.render(artist));
         }else{
-            return ok("artist does not exist");
+            return badRequest("artist does not exist");
         }
     }
-
-    public Result edit(int artist){
-        return ok("Estoy editando una cuenta");
+    @Transactional(readOnly=true)
+    public Result edit(int artist_id){
+        EntityManager em = jpaApi.em();
+        Artist artist = em.find(Artist.class,artist_id);
+        if(artist==null){
+            return badRequest("Artist does not exist");
+        }else{
+            final Form<Artist> form = formFactory.form(Artist.class).fill(artist);
+            return ok(update_artist.render(form,artist));
+        }
     }
+    @Transactional
+    public Result update(int artist_id){
+        EntityManager em = jpaApi.em();
+        Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
+        java.util.Map<String,String> hm = form.data();
+        try{
+            Artist artist = em.find(Artist.class,artist_id);
+            artist.setUsername(hm.get("username"));
+            artist.setForename(hm.get("forename"));
+            artist.setSurname(hm.get("surname"));
+            return redirect(controllers.routes.ArtistController.show(artist.getId()));
+        }catch(Exception e){
+            form.reject("username","user already exist");
+            return badRequest(create_artist.render(form));
+        }
 
-    public Result update(int artist){
-        return ok("estoy actualizando una cuenta");
     }
 
     @Transactional

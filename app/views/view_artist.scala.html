@@ -35,11 +35,15 @@ No songs for this artist
 <br>
 
 @helper.form(action=controllers.routes.SongController.create(artist.getId())){
-<input type="submit" value="Upload song">
+    <input type="submit" value="Upload song">
 }
-
+<br/>
+@helper.form(action=controllers.routes.ArtistController.edit(artist.getId())){
+    <input type="submit" value="Edit artist">
+}
+<br/>
 @helper.form(action=controllers.routes.ArtistController.delete(artist.getId())){
-<input type="submit" value="Delete artist">
+    <input type="submit" value="Delete artist">
 }
 <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
     </body>
