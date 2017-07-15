@@ -1,0 +1,46 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(artist: models.Artist)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* Here's where we render the page title `String`. *@
+    <title>Artist info</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+
+</head>
+<body>
+Artist username: <strong>@artist.getUsername()</strong>
+<br/>
+<br/>
+Artist full name: <strong>@artist.getForename() @artist.getSurname()</strong>
+<br/>
+<br/>
+<br/>
+<strong>Songs:</strong>
+@if(!artist.getSongs().isEmpty) {
+<ul>
+    @for(song <- artist.getSongs()) {
+    <li>@song.title </li>
+    }
+</ul>
+}else{
+No songs for this artist
+}
+<br>
+
+@helper.form(action=controllers.routes.SongController.create(artist.getId())){
+<input type="submit" value="Upload song">
+}
+
+@helper.form(action=controllers.routes.ArtistController.delete(artist.getId())){
+<input type="submit" value="Delete artist">
+}
+<script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+    </body>
+</html>

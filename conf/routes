@@ -20,7 +20,7 @@ GET     /songs                      controllers.SongController.index
 GET     /songs/:song                controllers.SongController.show(song :Integer)
 
 # Delete song
-DELETE  /songs/:song                controllers.SongController.destroy(song :Integer)
+POST  /songs/:song/del                controllers.SongController.destroy(song :Integer)
 
 # Show artist account
 GET     /artist/:artist          controllers.ArtistController.show(artist :Integer)
@@ -30,7 +30,7 @@ GET     /artist/:artist/edit             controllers.ArtistController.edit(artis
 PATCH   /artist/:artist                  controllers.ArtistController.update(artist :Integer)
 
 # Artist delete
-DELETE  /artist/:artist                  controllers.ArtistController.delete(artist :Integer)
+POST  /artist/:artist/del                  controllers.ArtistController.delete(artist :Integer)
 
 
 # Add song for an artist

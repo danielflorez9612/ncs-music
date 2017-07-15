@@ -8,42 +8,58 @@ import play.db.jpa.Transactional;
 import javax.inject.Inject;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.artist;
+import views.html.create_artist;
+import views.html.view_artist;
 import javax.persistence.*;
-
+import play.db.jpa.JPAApi;
 
 public class ArtistController extends Controller {
+
 
     @Inject
     FormFactory formFactory;
 
+    @Inject
+    JPAApi jpaApi;
+
     public Result create() {
         final Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
-        return ok(artist.render(form));
+        return ok(create_artist.render(form));
     }
 
     @Transactional
     public Result store() {
+        EntityManager em = jpaApi.em();
         Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
         Artist nArtist = form.get();
 
-        Integer id = JPA.em().createNamedQuery("Artist.maxId",Integer.class)
+        Integer id = em.createNamedQuery("Artist.maxId",Integer.class)
                 .getSingleResult();
         if(id==null) {
             id=0;
         }
         nArtist.setId(++id);
+
+        //TODO: catch the correct exception (check stackoverflow)
         try{
-            JPA.em().persist(nArtist);
-            return ok(nArtist.toString());
-        }catch(RollbackException e){
+            em.persist(nArtist);
+        }catch(Exception e){
             form.reject("username","user already exist");
-            return badRequest(artist.render(form));
+            return badRequest(create_artist.render(form));
         }
+
+        return redirect(controllers.routes.ArtistController.show(nArtist.getId()));
     }
 
-    public Result show(int artist) {
-        return ok("estoy mostrando una cuenta");
+    @Transactional(readOnly=true)
+    public Result show(int artist_id) {
+        Artist artist = JPA.em().find(Artist.class,artist_id);
+        if(artist!=null){
+            final Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
+            return ok(view_artist.render(artist));
+        }else{
+            return ok("artist does not exist");
+        }
     }
 
     public Result edit(int artist){
@@ -54,7 +70,15 @@ public class ArtistController extends Controller {
         return ok("estoy actualizando una cuenta");
     }
 
-    public Result delete(int artist){
-        return ok("estoy borrando una cuenta");
+    @Transactional
+    public Result delete(int artist_id){
+        Artist artist = JPA.em().find(Artist.class, artist_id);
+        if(artist!=null){
+            JPA.em().remove(artist);
+            return redirect("Artist deleted succesfully");
+        }else{
+            return ok("artist does not exist");
+        }
     }
+
 }

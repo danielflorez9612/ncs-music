@@ -2,7 +2,7 @@
 
 @main("Create Account") {
     <h1>Account creation form</h1>
-    @helper.form(helper.CSRF(routes.ArtistController.store)) {
+    @helper.form(action=routes.ArtistController.store) {
         <fieldset>
             @helper.inputText(artistForm("username"), '_label -> "username")
             @helper.inputPassword(artistForm("password"), '_label -> "password")
