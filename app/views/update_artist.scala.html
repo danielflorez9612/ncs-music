@@ -1,14 +1,32 @@
 @(artistForm: play.data.Form[Artist])(artist: models.Artist)
 
+
 @main("Update Artist") {
-    <h1>Account update form for @artist.getUsername()</h1>
+<h1>Account update form for @artist.getUsername()</h1>
+<div class="row">
     @helper.form(action=routes.ArtistController.update(artist.getId())) {
-        <fieldset>
-            @helper.inputText(field =artistForm("username"), '_label -> "username")
-            @helper.inputPassword(field =artistForm("password"), '_label -> "password")
-            @helper.inputText(field =artistForm("forename"), '_label -> "forename")
-            @helper.inputText(field =artistForm("surname"), '_label -> "surname")
-        </fieldset>
-        <input type="submit" class="btn btn-primary" value="Update">
+    <div class="row">
+        <div class="input-field col s12">
+            @helper.inputText(artistForm("username"),'required -> "required",'_class -> "validate")
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            @helper.inputPassword(artistForm("password"),'required -> "required",'_class -> "validate")
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+            @helper.inputText(artistForm("forename"), '_label -> "forename", 'required -> "required",'_class -> "validate")
+        </div>
+        <div class="input-field col s6">
+            @helper.inputText(artistForm("surname"), '_label -> "surname", 'required -> "required",'_class -> "validate")
+        </div>
+    </div>
+    <div class="row">
+        <a class="waves-effect waves-light btn red" href="@controllers.routes.ArtistController.show(artist.getId())">Back</a>
+        <input type="submit" class="btn green" value="Update">
+    </div>
     }
+</div>
 }

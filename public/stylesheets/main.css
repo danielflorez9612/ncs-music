@@ -2,3 +2,18 @@ dd.error{
     color:red;
     font-weight:bold;
 }
+.card-action-form{
+    display:inline-block !important;
+}
+.card-action-white{
+    color:blue !important;
+}
+.card-action-white:hover{
+    color:white !important;
+}
+.card-action-red{
+    color:red !important;
+}
+.card-action-red:hover{
+    color:white !important;
+}
