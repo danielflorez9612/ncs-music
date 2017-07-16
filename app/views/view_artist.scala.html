@@ -1,11 +1,20 @@
 @(artist: models.Artist)
+@*
+*Displays a song in particular with its player
+*@
 @display(song :models.Song)={
     @song.getTitle()
     <br/>
+    @*
+    *Shows the browser's audio player
+    *@
     <audio id="@song.getId()" src="@song.getUri()" controls>
         Your browser does not support audio.
     </audio>
     @helper.form(action=controllers.routes.SongController.destroy(song.getId())){
+        @*
+        *Button that deletes the song
+        *@
         <input class="waves-effect waves-light btn red" type="submit" value="Delete this song">
     }
 }
@@ -35,8 +44,17 @@
                     </div>
                 </div>
                 <div class="card-action green">
+                    @*
+                    *Action that goes to the upload song form
+                    *@
                     <a class="card-action-white" href="@controllers.routes.SongController.create(artist.getId())">Upload song</a>
+                    @*
+                    *Action that goes to the edit artist form
+                    *@
                     <a class="card-action-white" href="@controllers.routes.ArtistController.edit(artist.getId())">Edit artist</a>
+                    @*
+                    *Action button that deletes the artist
+                    *@
                     <a class="card-action-red" href="@controllers.routes.ArtistController.edit(artist.getId())">
                         @helper.form(action=controllers.routes.ArtistController.delete(artist.getId()),'class -> "card-action-form"){
                         <input style="background:transparent; border:0px;" type="submit" value="DELETE ARTIST">
@@ -44,6 +62,9 @@
                     </a>
                     <br/>
                     <br/>
+                    @*
+                    *Action that goes back to the artist index
+                    *@
                     <a class="waves-effect waves-light btn red" href="@controllers.routes.ArtistController.index">Back</a>
                 </div>
             </div>
