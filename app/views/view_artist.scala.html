@@ -40,9 +40,10 @@ Artist full name: <strong>@artist.getForename() @artist.getSurname()</strong>
     @for(song <- artist.getSongs()) {
     <li>
         @song.getTitle()
-        @helper.form(action=controllers.routes.SongController.show(song.getId())){
-        <input type="submit" value="Play this song">
-        }
+        <br/>
+        <audio id="@song.getId()" src="@song.getUri()" controls>
+            Your browser does not support audio.
+        </audio>
         @helper.form(action=controllers.routes.SongController.destroy(song.getId())){
         <input type="submit" value="Delete this song">
         }
