@@ -1,4 +1,7 @@
 @(artists: List[models.Artist])
+@*
+*Displays an artist in particular with it's number of songs
+*@
 @display(artist: models.Artist)={
     <a href="@controllers.routes.ArtistController.show(artist.getId)" class="collection-item green-text darken-4">
         <span class="badge">

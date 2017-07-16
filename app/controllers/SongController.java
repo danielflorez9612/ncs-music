@@ -16,25 +16,26 @@ import com.cloudinary.*;
 import com.cloudinary.utils.ObjectUtils;
 /**
  * This controller contains an action to handle HTTP requests
- * to the application's home page.
+ * and execute querys into the song table.
  */
 public class SongController extends Controller {
-
+    /**
+     * Injects the formFactory needed to create forms
+     */
     @Inject
     FormFactory formFactory;
 
+    /**
+     * Injects the JPAApi needed to obtain the EntityManager
+     */
     @Inject
     JPAApi jpaApi;
 
-    private Cloudinary cloudinary;
-
-
-    public Result index() {
-        return ok("mostrando index de canciones");
-    }
-    public Result show(int id){
-        return ok("crmostrando una cancion");
-    }
+    /**
+     * Deletes the song with the id given
+     * @param id the id of the song to delete
+     * @return Response that shows the artist that had the song or a bad request
+     */
     @Transactional
     public Result destroy(int id){
         EntityManager em = jpaApi.em();
@@ -44,14 +45,24 @@ public class SongController extends Controller {
             em.remove(song);
             return redirect(controllers.routes.ArtistController.show(artist_id));
         }else{
-            return ok("Song does not exist");
+            return badRequest("Song does not exist");
         }
     }
 
+    /**
+     * Shows the form that uploads a form for an artist
+     * @param artist_id the id of the artist that uploads the song
+     * @return Response that shows the form to upload a song
+     */
     public Result create(Integer artist_id){
         return ok(upload_song.render(artist_id,""));
     }
 
+    /**
+     * Uploads a song for an artist to cloudinary
+     * @param artist_id the id of the artist that uploads the song
+     * @return Response that goes to the artist that uploaded the song or a the form to upload it with errors
+     */
     @Transactional
     public Result store(Integer artist_id){
         MultipartFormData<File> body = request().body().asMultipartFormData();

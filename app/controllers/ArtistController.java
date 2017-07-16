@@ -13,20 +13,35 @@ import javax.persistence.*;
 import play.db.jpa.JPAApi;
 import java.util.*;
 
+/**
+ *This controller contains an action to handle HTTP requests and execute querys into the artist table.
+ */
 public class ArtistController extends Controller {
-
-
+    /**
+     * Injects the formFactory needed to create forms
+     */
     @Inject
     FormFactory formFactory;
 
+    /**
+     * Injects the JPAApi needed to obtain the EntityManager
+     */
     @Inject
     JPAApi jpaApi;
 
+    /**
+     * Shows the form to create an artist
+     * @return Result with the render of the form to create an artist
+     */
     public Result create() {
         final Form<Artist> form = formFactory.form(Artist.class);
         return ok(create_artist.render(form));
     }
 
+    /**
+     * Stores an artist into the database
+     * @return Result with a redirect to show the artist created or a rejected form binded from Request
+     */
     @Transactional
     public Result store() {
         EntityManager em = jpaApi.em();
@@ -52,6 +67,11 @@ public class ArtistController extends Controller {
 
     }
 
+    /**
+     * Shows the view of an artist
+     * @param artist_id the id of the artist to show
+     * @return Response with the view of the artist needed, or a bad request
+     */
     @Transactional(readOnly=true)
     public Result show(int artist_id) {
         Artist artist = JPA.em().find(Artist.class,artist_id);
@@ -62,6 +82,12 @@ public class ArtistController extends Controller {
             return badRequest("artist does not exist");
         }
     }
+
+    /**
+     * Shows the form to edit an artist
+     * @param artist_id the id of the artist to edit
+     * @return Response with a form to edit or a bad request
+     */
     @Transactional(readOnly=true)
     public Result edit(int artist_id){
         EntityManager em = jpaApi.em();
@@ -73,6 +99,12 @@ public class ArtistController extends Controller {
             return ok(update_artist.render(form,artist));
         }
     }
+
+    /**
+     * Updates the artist with the id given
+     * @param artist_id the id of the artist to update
+     * @return Response that goes to the artist edited or a bad request with the form binded from Request rejected
+     */
     @Transactional
     public Result update(int artist_id){
         EntityManager em = jpaApi.em();
@@ -91,6 +123,11 @@ public class ArtistController extends Controller {
 
     }
 
+    /**
+     * Deletes the artist with the id given
+     * @param artist_id the id of the artist to delete
+     * @return Response that goes to the artist index or a bad request
+     */
     @Transactional
     public Result delete(int artist_id){
         EntityManager em = jpaApi.em();
@@ -99,10 +136,14 @@ public class ArtistController extends Controller {
            em.remove(artist);
            return redirect(controllers.routes.ArtistController.index());
         }else{
-            return ok("artist does not exist");
+            return badRequest("artist does not exist");
         }
     }
 
+    /**
+     * Shows all the artists
+     * @return Response with the view that shows the artists
+     */
     @Transactional(readOnly=true)
     public Result index() {
         EntityManager em = jpaApi.em();

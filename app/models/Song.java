@@ -3,6 +3,10 @@ package models;
 import javax.persistence.*;
 import models.Artist;
 
+/**
+ * This class maps the table 'song' from the database using JPA
+ * @query Song.maxId select the max id in the table
+ */
 @Entity
 @Table(name = "song")
 @NamedQuery(name="Song.maxId", query="select max(s.id) from Song s")

@@ -13,12 +13,6 @@ GET     /                           controllers.ArtistController.index
 GET     /sign-up                    controllers.ArtistController.create
 POST    /sign-up                    controllers.ArtistController.store
 
-# Show songs
-GET     /songs                      controllers.SongController.index
-
-# Play song
-GET     /songs/:song                controllers.SongController.show(song :Integer)
-
 # Delete song
 POST  /songs/:song/del                controllers.SongController.destroy(song :Integer)
 
