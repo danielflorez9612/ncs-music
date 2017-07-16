@@ -7,7 +7,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 
 # Controller showing a sample home page
-GET     /                           controllers.HomeController.index
+GET     /                           controllers.ArtistController.index
 
 # Create artist account form
 GET     /sign-up                    controllers.ArtistController.create

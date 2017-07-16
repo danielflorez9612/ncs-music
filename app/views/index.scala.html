@@ -1,5 +1,26 @@
-@()
-
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
+@(artists: List[models.Artist])
+@display(artist: models.Artist)={
+    <a href="@controllers.routes.ArtistController.show(artist.getId)" class="collection-item green-text darken-4">
+        <span class="badge">
+            Username:
+            @artist.getUsername
+        </span>
+        <strong>
+            @artist.getForename
+            @artist.getSurname
+        </strong>
+    </a>
+}
+@main("NCS-Music") {
+    <div class="row">
+        <h1>Select an artist</h1>
+        <div class="collection">
+            @for(artist <- artists) {
+                @display(artist)
+            }
+        </div>
+    </div>
+    <div class="row">
+        <a class="waves-effect waves-light btn green" href="@controllers.routes.ArtistController.create"><i class="material-icons right">perm_identity</i>New Artist</a>
+    </div>
 }

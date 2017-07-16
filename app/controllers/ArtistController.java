@@ -11,6 +11,7 @@ import play.mvc.Result;
 import views.html.*;
 import javax.persistence.*;
 import play.db.jpa.JPAApi;
+import java.util.*;
 
 public class ArtistController extends Controller {
 
@@ -99,6 +100,13 @@ public class ArtistController extends Controller {
         }else{
             return ok("artist does not exist");
         }
+    }
+
+    @Transactional(readOnly=true)
+    public Result index() {
+        EntityManager em = jpaApi.em();
+        Query query = em.createQuery("SELECT e FROM Artist e");
+        return ok(views.html.index.render((List<Artist>) query.getResultList()));
     }
 
 }
