@@ -4,10 +4,16 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import models.*;
 
+/**
+ * Class that tests the song entity
+ */
 public class SongTest {
 
+    /**
+     * Tests the getters and setters for the song entity
+     */
     @Test
-    public void testSong() {
+    public void testSongGettersSetters() {
         Integer id = 4;
         String title="title",uri = "uri";
 

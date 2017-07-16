@@ -4,8 +4,15 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import models.*;
+
+/**
+ * Class that tests the artist model
+ */
 public class ArtistTest {
 
+    /**
+     * Tests the getter and setters for the artist class
+     */
     @Test
     public void testArtistGettersSetters() {
         String username="username",
@@ -26,6 +33,10 @@ public class ArtistTest {
         assertEquals("Problem with forename",forename, artist.getForename());
         assertEquals("Problem with surname",surname, artist.getSurname());
     }
+
+    /**
+     * Tests the constructor for the artist class
+     */
     @Test
     public void testArtistConstructor() {
         String username="username",
