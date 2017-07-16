@@ -9,9 +9,11 @@ import play.data.FormFactory;
 import javax.inject.Inject;
 import views.html.upload_song;
 import java.io.File;
+import java.util.*;
 import javax.persistence.*;
 import play.db.jpa.JPAApi;
-
+import com.cloudinary.*;
+import com.cloudinary.utils.ObjectUtils;
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
@@ -23,12 +25,10 @@ public class SongController extends Controller {
 
     @Inject
     JPAApi jpaApi;
-    /**
-     * An action that renders an HTML page with a welcome message.
-     * The configuration in the <code>routes</code> file means that
-     * this method will be called when the application receives a
-     * <code>GET</code> request with a path of <code>/</code>.
-     */
+
+    private Cloudinary cloudinary;
+
+
     public Result index() {
         return ok("mostrando index de canciones");
     }
@@ -67,21 +67,14 @@ public class SongController extends Controller {
                 songFile.setWritable(true, false);
                 try
                 {
-                    File songDir = new File("./songs");
-                    if (!songDir.exists()) {
-                        songDir.mkdir();
-                    }
-                    File artistDir = new File(songDir.getPath()+"/"+artist_id);
-                    if (!artistDir.exists()) {
-                        artistDir.mkdir();
-                    }
-                    java.nio.file.Path source = java.nio.file.Paths.get(songFile.getPath());
-                    java.nio.file.Path dest = java.nio.file.Paths.get(artistDir.getPath()+"/"+fileName);
-                    java.nio.file.CopyOption[] options = new java.nio.file.CopyOption[]{
-                            java.nio.file.StandardCopyOption.REPLACE_EXISTING,
-                            java.nio.file.StandardCopyOption.COPY_ATTRIBUTES
-                    };
-                    java.nio.file.Files.copy(source, dest, options);
+                    Map config = new HashMap();
+                    config.put("cloud_name", "fearlessmonkeycloud");
+                    config.put("api_key", "346117855196925");
+                    config.put("api_secret", "66jReAGXErVJ7-ScK510PVxzkeU");
+                    Cloudinary cloudinary = new Cloudinary(config);
+                    Map uploadResult = cloudinary.uploader().upload(songFile, ObjectUtils.asMap(
+                            "resource_type", "auto"
+                    ));
                     EntityManager em = jpaApi.em();
                     Integer id = em.createNamedQuery("Song.maxId",Integer.class)
                             .getSingleResult();
@@ -90,12 +83,13 @@ public class SongController extends Controller {
                     }
                     Artist artist = em.find(Artist.class, artist_id);
                     Song song = new Song(++id, fileName,artist );
+                    song.setUri(uploadResult.get("url").toString());
                     em.persist(song);
                     return redirect(controllers.routes.ArtistController.show(artist_id));
                 }
                 catch (Exception e){
                     e.printStackTrace();
-                    return badRequest(upload_song.render(artist_id,"Error uploading file: "+e.getMessage()));
+                    return badRequest(upload_song.render(artist_id,"Error uploading file: "+e.getMessage()+" -- "+e.getCause()));
                 }
             }else{
                 return badRequest(upload_song.render(artist_id,"song must be a mp3 file"));

@@ -30,7 +30,6 @@ public class Song {
         this.id = id;
         this.title = filename.substring(0,filename.indexOf(".mp3"));
         setArtist(artist);
-        this.uri = "./songs/"+artist.getId()+"/"+filename;
     }
 
     public void setArtist(Artist artist) {
