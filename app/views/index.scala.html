@@ -2,8 +2,7 @@
 @display(artist: models.Artist)={
     <a href="@controllers.routes.ArtistController.show(artist.getId)" class="collection-item green-text darken-4">
         <span class="badge">
-            Username:
-            @artist.getUsername
+            songs: @artist.getSongs().size()
         </span>
         <strong>
             @artist.getForename
@@ -13,7 +12,7 @@
 }
 @main("NCS-Music") {
     <div class="row">
-        <h1>Select an artist</h1>
+        <h1>NCS-Songs</h1>
         <div class="collection">
             @for(artist <- artists) {
                 @display(artist)

@@ -6,7 +6,7 @@
         Your browser does not support audio.
     </audio>
     @helper.form(action=controllers.routes.SongController.destroy(song.getId())){
-        <input type="submit" value="Delete this song">
+        <input class="waves-effect waves-light btn red" type="submit" value="Delete this song">
     }
 }
 @main("Artist Info"){
@@ -17,29 +17,34 @@
                     <span class="card-title"><strong>@artist.getForename() @artist.getSurname()'s info</strong></span>
                     <strong>Artist username:</strong> @artist.getUsername()
                     <br/>
-                    <strong>Songs:</strong>
-                    @if(!artist.getSongs().isEmpty) {
-                    <ul>
-                        @for(song <- artist.getSongs()) {
-                        <li>
-                            @display(song)
-                        </li>
-                        }
-                    </ul>
-                    }else{
-                    No songs for this artist
-                    }
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Songs</span>
+                            @if(!artist.getSongs().isEmpty) {
+                                <ul>
+                                    @for(song <- artist.getSongs()) {
+                                        <li>
+                                            @display(song)
+                                        </li>
+                                    }
+                                </ul>
+                            }else{
+                                No songs for this artist
+                            }
+                        </div>
+                    </div>
                 </div>
                 <div class="card-action green">
                     <a class="card-action-white" href="@controllers.routes.SongController.create(artist.getId())">Upload song</a>
                     <a class="card-action-white" href="@controllers.routes.ArtistController.edit(artist.getId())">Edit artist</a>
-                    <br/>
-                    <a class="card-action-red" href="@controllers.routes.ArtistController.index">Back</a>
                     <a class="card-action-red" href="@controllers.routes.ArtistController.edit(artist.getId())">
                         @helper.form(action=controllers.routes.ArtistController.delete(artist.getId()),'class -> "card-action-form"){
                         <input style="background:transparent; border:0px;" type="submit" value="DELETE ARTIST">
                         }
                     </a>
+                    <br/>
+                    <br/>
+                    <a class="waves-effect waves-light btn red" href="@controllers.routes.ArtistController.index">Back</a>
                 </div>
             </div>
         </div>

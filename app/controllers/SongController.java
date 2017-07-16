@@ -42,7 +42,7 @@ public class SongController extends Controller {
         if(song!=null){
             Integer artist_id = song.getArtist().getId();
             em.remove(song);
-            return redirect(controllers.routes.ArtistController.show(id));
+            return redirect(controllers.routes.ArtistController.show(artist_id));
         }else{
             return ok("Song does not exist");
         }

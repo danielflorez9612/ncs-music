@@ -97,7 +97,7 @@ public class ArtistController extends Controller {
         Artist artist = em.find(Artist.class, artist_id);
         if(artist!=null){
            em.remove(artist);
-            return redirect(controllers.routes.ArtistController.index());
+           return redirect(controllers.routes.ArtistController.index());
         }else{
             return ok("artist does not exist");
         }

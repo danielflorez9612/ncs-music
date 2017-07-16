@@ -2,7 +2,7 @@
 
 
 @main("Update Artist") {
-<h1>Account update form for @artist.getUsername()</h1>
+<h2>Account update form for @artist.getUsername()</h2>
 <div class="row">
     @helper.form(action=routes.ArtistController.update(artist.getId())) {
     <div class="row">
