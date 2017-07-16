@@ -33,21 +33,23 @@ public class ArtistController extends Controller {
         Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
         Artist nArtist = form.get();
 
-        TypedQuery<Artist> query = em.createQuery(
+        TypedQuery query = em.createQuery(
                 "SELECT a FROM Artist a WHERE a.username = :username", Artist.class);
-        Artist look =  query.setParameter("username", nArtist.getUsername()).getSingleResult();
-        if(look!=null){
+        try{
+            Artist look =  (Artist)query.setParameter("username", nArtist.getUsername()).getSingleResult();
             form.reject("username","user already exist");
             return badRequest(create_artist.render(form));
+        }catch(NoResultException e){
+            Integer id = em.createNamedQuery("Artist.maxId",Integer.class)
+                    .getSingleResult();
+            if(id==null) {
+                id=0;
+            }
+            nArtist.setId(++id);
+            em.persist(nArtist);
+            return redirect(controllers.routes.ArtistController.show(nArtist.getId()));
         }
-        Integer id = em.createNamedQuery("Artist.maxId",Integer.class)
-                .getSingleResult();
-        if(id==null) {
-            id=0;
-        }
-        nArtist.setId(++id);
-        em.persist(nArtist);
-        return redirect(controllers.routes.ArtistController.show(nArtist.getId()));
+
     }
 
     @Transactional(readOnly=true)
