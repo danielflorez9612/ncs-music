@@ -23,7 +23,7 @@ public class ArtistController extends Controller {
     JPAApi jpaApi;
 
     public Result create() {
-        final Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
+        final Form<Artist> form = formFactory.form(Artist.class);
         return ok(create_artist.render(form));
     }
 
@@ -33,21 +33,20 @@ public class ArtistController extends Controller {
         Form<Artist> form = formFactory.form(Artist.class).bindFromRequest();
         Artist nArtist = form.get();
 
+        TypedQuery<Artist> query = em.createQuery(
+                "SELECT a FROM Artist a WHERE a.username = :username", Artist.class);
+        Artist look =  query.setParameter("username", nArtist.getUsername()).getSingleResult();
+        if(look!=null){
+            form.reject("username","user already exist");
+            return badRequest(create_artist.render(form));
+        }
         Integer id = em.createNamedQuery("Artist.maxId",Integer.class)
                 .getSingleResult();
         if(id==null) {
             id=0;
         }
         nArtist.setId(++id);
-
-        //TODO: catch the correct exception (check stackoverflow)
-        try{
-            em.persist(nArtist);
-        }catch(Exception e){
-            form.reject("username","user already exist");
-            return badRequest(create_artist.render(form));
-        }
-
+        em.persist(nArtist);
         return redirect(controllers.routes.ArtistController.show(nArtist.getId()));
     }
 
